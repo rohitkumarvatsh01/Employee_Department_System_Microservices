@@ -1,7 +1,13 @@
 package com.department.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@NoArgsConstructor
 @Entity
 @Table(name="Department")
 public class Department {
@@ -13,16 +19,8 @@ public class Department {
     @Column(name="name")
     private String name;
 
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public void setId(Long id) {

@@ -44,4 +44,16 @@ public class EmployeeController {
     public String deleteOneRecord(@PathVariable Long id){
         return employeeService.deleteOneRecord(id);
     }
+
+    /*@Autowired
+    private DepartmentFeignClient departmentFeignClient;
+
+    @GetMapping("/employees/{employeeId}")
+    public Employee getEmployeeWithDepartment(@PathVariable Long employeeId) {
+        Employee employee = // logic to get employee
+                Long departmentId = employee.getDepartmentId();
+        Department department = departmentFeignClient.getDepartmentById(departmentId);
+        employee.setDepartment(department);
+        return employee;
+    }*/
 }
