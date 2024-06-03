@@ -1,2 +1,2 @@
 Employee Department System
-Technologies Used: Java, Spring Boot, JPA, Hibernate
+Technologies Used: Java, Spring Boot, JPA, Hibernate and Microservices
